@@ -1,4 +1,6 @@
-even = [2, 4, 6, 8, 10]
+from typing import List
+
+even: List[int] = [2, 4, 6, 8, 10]
 odd = [1, 3, 5, 7, 9]
 
 print("even min and max\n*************")
@@ -17,3 +19,9 @@ print("Count of list\n***************")
 print(f"The count {2} in even list is {even.count(2)}")
 
 print("mississippi".count("s"))
+print("abc".count(""))
+
+txt = "I love apples, apple are my favorite fruit"
+print("apple count is ")
+x = txt.count("apple", 20, 24)
+print(x)

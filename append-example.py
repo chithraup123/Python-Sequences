@@ -6,7 +6,7 @@ data.sort()
 print(f"After sorting.......\n{data}")
 for index in range(len(data) - 1, -1, -1):
     if data[index] > 10 or data[index] < 10:
-        print(index)
+       # print(index)
         del data[index]
 print(data)
 

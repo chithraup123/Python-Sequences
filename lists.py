@@ -21,10 +21,9 @@ for part in computer_parts:
 ################################################################
 #  Extend to a list,
 #  extend method takes all items from iterable(sequence) we pass and add to the existing list.
-
+print("Extend method")
 even = [2, 4, 6, 8, 10]
 odd = [1, 3, 5, 7, 9]
-
 even.extend(odd)
 print(even)
 
@@ -83,14 +82,21 @@ data = [4, 12, 6, 15, 9, 12, 56, 43, 10, 38, 79, 29, 22]
 data.sort()
 print(f"After sorting.......\n{data}")
 
-stop = 0
+stop = len(data)
+
+start = 0
 for index, value in enumerate(data):
-    if value > 10:
-        stop = index - 1
+    if value < 10:
+        start = index + 1
+        print(f"Start Index: {start}")
+
+    elif value > 50:
+        stop = index
+        print(f"Stop Index: {stop}")
         break
-print(stop)
-del data[:stop]
-print(data)
+#print(stop)
+print(f"After removing < 10 and >50 {data[start:stop:1]}")
+#print(data)
 
 # 3. Then remove items > 10
 start = 0

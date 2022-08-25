@@ -1,3 +1,9 @@
+
+str = "abc"
+print(id(str))
+str = "xyz"
+print(id(str))
+
 # Mutable object is one whose value can be changed without the objects being destroyed and re-created
 # Following are the mutable objects in python
 # list
@@ -9,6 +15,7 @@
 
 shopping_list = ["bread", "cheese", "rice", "eggs", "veggies"]
 another_list = shopping_list
+print("Id of shopping_list and another_list are: ")
 print(id(shopping_list))
 print(id(another_list))
 

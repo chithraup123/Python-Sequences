@@ -80,8 +80,8 @@ albums = [
 for name, artist, year, songs in albums:
     print(name, artist, year, songs)
 
-album  = albums[1]
-print ()
+album = albums[1]
+print()
 print(album)
 songs = album[3]
 print(songs)
@@ -92,3 +92,10 @@ album1 = albums[2]
 year = album1[2]
 print()
 print(year)
+
+print("looping over songs")
+songs_list = []
+for name, artist, year, songs in albums:
+    for index, song in songs:
+        songs_list.append(song)
+print(f"Song is {tuple(songs_list)}")

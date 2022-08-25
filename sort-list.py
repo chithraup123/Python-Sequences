@@ -22,7 +22,7 @@ pangram = "The quick brown fox jumps over the lazy dog"
 # but uppercase letters sort before lowercase
 # also duplicated items will not get removed here
 letters = sorted(pangram)
-print(letters)
+print(f"The result of sorted function is {letters}")
 
 even = [2, 4, 6, 8, 10]
 odd = [1, 3, 5, 7, 9]
@@ -39,7 +39,7 @@ print(sorted_numbers)
 letters = sorted(pangram, key=str.casefold)
 print(letters)
 
-str1 = ["z", "g","e","a", "C"]
+str1 = ["z", "g", "e", "a", "C"]
 str1.sort(key=str.casefold)
 print(str1)
 str1.sort(key=str.casefold, reverse=True)
